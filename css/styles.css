@@ -637,7 +637,10 @@ a {
     padding-left: 20px;
     padding-right: 20px;
 }
-
+/*svg:not(:root) {
+    width:100%;
+    height: auto;
+}*/
 a {
     font-family: "colfax-medium", sans-serif
 }
@@ -876,8 +879,8 @@ button {
 }
 
 .screen-wrapper .screen {
-    margin: 0 auto -140px;
-    width: 1400px
+    margin: 0 auto 0px;
+    background-size: 10%
 }
 
 .title {
@@ -1045,9 +1048,9 @@ button {
     }
 
     .screen-wrapper .screen {
-        margin: 0 auto -40px;
-        max-width: none;
-        width: 600px
+        margin: 0 auto 0px;
+        width: 600px;
+        background-size: 10%
     }
 
     .section {
