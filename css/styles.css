@@ -378,6 +378,7 @@ input:-webkit-autofill {
     display: none
 }
 
+
 @media (max-width: 900px) {
     .hide-mobile {
         display: none !important
@@ -602,8 +603,8 @@ h3,
 .h3 {
     letter-spacing: -1px;
     font-weight: normal;
-    font-family: "colfax-bold", sans-serif;
-    font-size: 16px;
+    font-family: "colfax-medium", sans-serif;
+    font-size: 25px;
     color: #000000;
 }
 
@@ -631,7 +632,7 @@ form .group label,
 a {
     letter-spacing: -0.3px;
     font-family: "colfax-light", sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 2;
     color: #222;
     padding-left: 20px;
@@ -892,7 +893,8 @@ button {
 
 .subtitle {
     margin: 16px 0 0 -4px;
-    font-size: 12px
+    font-size: 12px;
+    text-align: center;
 }
 
 .subtitle img {
@@ -1113,7 +1115,7 @@ button {
     padding: 20px 26px 16px 24px;
     border-radius: 4px;
     background: #fff;
-    margin: 10px
+    margin: 10px;
 }
 
 .features .feature .icon {
@@ -1130,12 +1132,14 @@ button {
 
 .features .donts {
     -webkit-animation: scrollLeft 80s linear infinite;
-    animation: scrollLeft 80s linear infinite
+    animation: scrollLeft 80s linear infinite;
+        color:  red;
 }
 
 .features .dos {
     -webkit-animation: scrollRight 80s linear infinite;
-    animation: scrollRight 80s linear infinite
+    animation: scrollRight 80s linear infinite;
+    color:  green;
 }
 
 .features .overlay-bottom {
@@ -1777,7 +1781,8 @@ h2,
     font-family: "colfax-light", sans-serif;
     line-height: 1.6;
     font-size: 40px;
-    color: #222
+    width: 80%;
+    color: #222;
 }
 
 h2,
@@ -1787,11 +1792,13 @@ h2,
 
 h3,
 .h3 {
-    letter-spacing: -1px;
+    letter-spacing: -0.3px;
     font-weight: normal;
-    font-family: "colfax-bold", sans-serif;
+    font-family: "colfax-light", sans-serif;
     font-size: 16px;
-    color: #000000;
+        line-height: 2;
+        width: 80%;
+    color: #222
 }
 
 p,
@@ -1801,6 +1808,7 @@ a {
     font-family: "colfax-light", sans-serif;
     font-size: 16px;
     line-height: 2;
+    width: 100%;
     color: #222
 }
 
@@ -1891,6 +1899,36 @@ a:hover {
     width: 100%;
     height: auto;
     z-index: 1;
+}
+
+
+
+.container {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  width:  100%;
+    flex-wrap: wrap; /* added - this tells Flex to wrap onto a new line, if there is no space. */
+}
+
+.column {
+    display: inline block;
+    padding: 0.5em;
+    justify-content: center;
+      align-items: center;
+    display: block;
+    width: 33.333%;
+    box-sizing: border-box; /* added - this changes the way padding is applied, so it always stays at 33.33%, regardless of padding */
+}
+.column img {
+    justify-content: center;
+      align-items: center;
+    display: block; /* removes the spacing underneath the image */
+    width: 100%; /* sets the width to the parents width */
+    height: 100%; /* set the height to the parents height */
+    object-fit: cover; /* prevents image from stretching */
 }
 
 /* logo flip */
