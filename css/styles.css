@@ -635,8 +635,8 @@ a {
     font-size: 36px;
     line-height: 2;
     color: #222;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 2px;
+    padding-right: 2px;
 }
 /*svg:not(:root) {
     width:100%;
